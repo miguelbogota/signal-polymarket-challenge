@@ -5,14 +5,54 @@ import "@/styles/global.css";
 import { themeClass } from "@/styles/theme.css";
 import { shell } from "./layout.styles.css";
 
+/** Identifies the canonical public origin used by generated metadata. */
+const siteUrl = "https://signal-polymarket-challenge.vercel.app";
+
 /** Defines default document metadata for the Signal application. */
 export const metadata: Metadata = {
-  title: "Signal — Market intelligence",
-  description: "AI-assisted prediction market discovery.",
+  metadataBase: new URL(siteUrl),
+  applicationName: "Signal",
+  title: {
+    default: "Signal — AI-assisted market intelligence",
+    template: "%s | Signal",
+  },
+  description:
+    "Discover prediction markets, understand the signal, and track simulated positions with AI-assisted context.",
+  keywords: [
+    "prediction markets",
+    "market intelligence",
+    "AI recommendations",
+    "Polymarket",
+    "Signal",
+  ],
+  alternates: { canonical: "/" },
+  icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "Signal",
+    title: "Signal — AI-assisted market intelligence",
+    description:
+      "Discover prediction markets, understand the signal, and track simulated positions with AI-assisted context.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Signal — AI-assisted market intelligence",
+    description:
+      "Discover prediction markets, understand the signal, and track simulated positions with AI-assisted context.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
+/** Defines responsive viewport behavior and the browser color hint. */
 export const viewport: Viewport = {
   initialScale: 1,
+  themeColor: "#090b12",
   width: "device-width",
 };
 
