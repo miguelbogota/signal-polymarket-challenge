@@ -84,9 +84,9 @@ export function AiRecommendation({ marketId }: { marketId: string }) {
         <span className={styles.icon} aria-hidden="true">
           ✦
         </span>
-        <div>
+        <div className={styles.copy}>
           <span className={styles.eyebrow}>Signal AI read</span>
-          <strong>AI recommendation</strong>
+          <strong className={styles.title}>AI recommendation</strong>
         </div>
         {isLoading && (
           <span className={styles.status}>Analyzing live market context…</span>

@@ -29,6 +29,12 @@ export const icon = style({
   fontSize: "20px",
 });
 
+/** Stacks the AI label and recommendation title. */
+export const copy = style({
+  display: "grid",
+  gap: vars.space.xxs,
+});
+
 /** Styles AI identity text. */
 export const eyebrow = style({
   color: vars.color.accent,
@@ -38,6 +44,9 @@ export const eyebrow = style({
   letterSpacing: ".12em",
   textTransform: "uppercase",
 });
+
+/** Keeps the AI recommendation title on its own line. */
+export const title = style({ display: "block" });
 
 /** Styles the live AI status. */
 export const status = style({
