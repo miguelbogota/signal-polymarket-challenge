@@ -65,6 +65,8 @@ export default function OpenGraphImage() {
           </div>
           <div
             style={{
+              display: "flex",
+              flexDirection: "column",
               fontSize: "68px",
               fontWeight: 800,
               letterSpacing: "-3px",
@@ -72,9 +74,8 @@ export default function OpenGraphImage() {
               marginTop: "38px",
             }}
           >
-            See the market.
-            <br />
-            Understand the signal.
+            <span>See the market.</span>
+            <span>Understand the signal.</span>
           </div>
         </div>
         <div
