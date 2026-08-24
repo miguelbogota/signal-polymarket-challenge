@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Discover prediction markets, understand the signal, and track simulated positions with AI-assisted context.",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Signal — AI-assisted market intelligence",
     description:
       "Discover prediction markets, understand the signal, and track simulated positions with AI-assisted context.",
