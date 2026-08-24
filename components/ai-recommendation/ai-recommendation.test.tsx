@@ -9,6 +9,7 @@ describe("AiRecommendation", () => {
       vi.fn(() => new Promise(() => {})),
     );
     render(<AiRecommendation marketId="market-1" />);
+    expect(screen.getByText("Signal AI read")).toBeInTheDocument();
     expect(screen.getByText("AI recommendation")).toBeInTheDocument();
   });
 });
